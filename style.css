@@ -1,35 +1,48 @@
-*{
-  border:1px dashed black;
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 body{
   background-color: #777;
   text-align: center;
+  height:inherit;
 }
 
 header{
   background-color: #ebebeb;
   margin: 10px 10px 10px 10px;
   padding: 5px 5px 5px 5px;
+  font-family: 'Arial';
 }
 
 nav{
   background-color: #ebebeb;
   margin: 10px 10px 10px 10px;
   padding: 5px 5px 5px 5px;
+  font-family:'Helvetica Neue';
 }
 
 section{
   background-color: #ebebeb;
   margin: 10px 10px 10px 10px;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 20px 5px;
   float:left;
+  width:275px;
+  height:300px;
 }
 
 article{
   background-color: #777;
   margin: 10px 10px 10px 10px;
-  padding: 5px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  color:#ebebeb;
+  font-family: Helvetica;
+  height:200px;
 }
 
 aside{
@@ -37,27 +50,31 @@ aside{
   margin: 10px 10px 10px 10px;
   padding: 5px 5px 5px 5px;
   float: right;
+  font-family: Helvetica;
+  width: 275px;
+  height: 315px;
 }
 
 footer{
   background-color: #ebebeb;
   margin: 10px 10px 10px 10px;
   padding: 5px 5px 5px 5px;
-  position: fixed;
-  bottom: 0px;
-  width:90%;
+  width:94%;
+  font-family:sans-serif;
+  position:absolute;
+  bottom:0;
 }
 
 h1{
   color: #777;
   background-color: #ebebeb;
   font-size:18px;
-  font-family: sans-serif;
+  padding: 10px 10px 10px 10px;
 }
 
 p{
   color: #777;
   background-color: #ebebeb;
   font-size: 18px;
-  font-family: Arial;
+  padding: 10px 10px 10px 10px;
 }
